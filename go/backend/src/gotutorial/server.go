@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	stripe.Key = "sk_test_51Org7gSILGeHvE7h9cZUAGQeAlowZhu6yjbMcGr7423KUMLetaiToC60Ck5xlJjCpJvJ8TvroKofQVgJArNqP63c00Su5I67mW"
+	stripe.Key = "<Your Stripe Secret_Key>"
 	http.HandleFunc("/create-payment-intent", handleCreatePaymentIntent)
 	http.HandleFunc("/health", handleHealth)
 
